@@ -11,3 +11,6 @@ APP_PORT = process.env.PORT || 3000;
 app.listen(APP_PORT, () =>
     console.log('Server running on port'+ ' ' + APP_PORT));
 
+app.use('/', mainRoutes.homeRoute);
+
+app.use('/about', mainRoutes.aboutRoute);
