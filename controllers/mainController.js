@@ -1,11 +1,11 @@
 const path = require('path')
 
 const renderHome = (req, res) => {
-        return res.sendFile(path.resolve('views/home.html'));
+        return res.render('home.ejs');
      }    
 
 const renderAbout = (req, res) => {
-        return res.sendFile(path.resolve('views/about.html'));
+        return res.render('about.ejs');
      }       
 
 module.exports = {renderHome, renderAbout};
